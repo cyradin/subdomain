@@ -59,6 +59,7 @@ Option      | Default Value    | Description
 base        | **required**       | Supply your top level domain.
 removeWWW   | false            | Should the www subdomain be removed and the user redirected to the base?
 ignoreWWW   | false            | Should the www subdomain be ignored and the request routed without the `/subdomain/:domain` component added to the front of the path?
+ignoreByRegex | false          | If request matches regex, it will not be modified (i.e.`/\.(js|css|jpg|jpeg|png|gif|ico)/i` makes subdomain skip static files).
 prefix      | "subdomain"      | What prefix should subdomain put in the path?
 debug       | false            | Not currently implemented.
 
